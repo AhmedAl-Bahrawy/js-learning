@@ -1,24 +1,44 @@
-// old way to make a variable
-var a = 1;
+/*
+JavaScript Variable Naming Rules:
+1. Variable names can contain letters, numbers, underscores (_), and dollar signs ($)
+2. Variable names must begin with a letter, underscore, or dollar sign
+3. Variable names are case-sensitive (myVar and myvar are different)
+4. Variable names cannot be JavaScript reserved keywords (like let, const, var, function, etc.)
+5. Use camelCase for variable names (first word lowercase, subsequent words capitalized)
+6. Variable names should be descriptive and meaningful
+7. Avoid using single letters unless in loops or temporary variables
+*/
 
-// new way to make a variable
-let b = 2;
+let firstName = "Ahmed";
+let lastName = "Al-Bahrawy";
+let age = 20;
+let city = "New York";
 
-// const is a constant variable
-const c = 3;
+let fullName = firstName + " " + lastName;
+let fullName2 = `${firstName} ${lastName}`;
 
-// by that way I can change one time
+let greeting = "Hello, my name is " + fullName + " and I am " + age + " years old.";
+let greeting2 = `Hello, my name is ${fullName} and I am ${age} years old.`;
 
-// Values ​​change depending on the code order
-let x = "I follow my own dreams";
+
+let x = 'I follow my own dreams';
+let y = x // this is a copy of x   y = 'I follow my own dreams'
+let z = y // this is a copy of y   z = 'I follow my own dreams'
+
 console.log(x);
-x = 5;
-console.log(x);
-x = 'Ahmed'
-console.log(x);
-x = 'Al-Bahrawy'
-console.log(x);
-console.log(x);
-x = 5;
-console.log(x);
-x = 'Ahmed'
+console.log(y);
+console.log(z);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
