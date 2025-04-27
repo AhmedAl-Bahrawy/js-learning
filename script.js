@@ -1,37 +1,58 @@
-/*
-JavaScript Variable Naming Rules:
-1. Variable names can contain letters, numbers, underscores (_), and dollar signs ($)
-2. Variable names must begin with a letter, underscore, or dollar sign
-3. Variable names are case-sensitive (myVar and myvar are different)
-4. Variable names cannot be JavaScript reserved keywords (like let, const, var, function, etc.)
-5. Use camelCase for variable names (first word lowercase, subsequent words capitalized)
-6. Variable names should be descriptive and meaningful
-7. Avoid using single letters unless in loops or temporary variables
-*/
+// one of the most important things in JavaScript is the ordering of compilation in numbers
+// This is known as "Operator Precedence" - the order in which operations are performed
 
-let firstName = "Ahmed";
-let lastName = "Al-Bahrawy";
-let age = 20;
-let city = "New York";
+// Example of JavaScript number operations and order of operations (PEMDAS)
+let example1 = 10 + 5 * 2;     // Multiplication happens first: 5 * 2 = 10, then 10 + 10 = 20
+console.log("Example 1:", example1);
 
-let fullName = firstName + " " + lastName;
-let fullName2 = `${firstName} ${lastName}`;
+let example2 = (10 + 5) * 2;   // Parentheses take precedence: 10 + 5 = 15, then 15 * 2 = 30
+console.log("Example 2:", example2);
 
-let greeting = "Hello, my name is " + fullName + " and I am " + age + " years old.";
-let greeting2 = `Hello, my name is ${fullName} and I am ${age} years old.`;
+// Order of operations in JavaScript follows PEMDAS:
+// P - Parentheses () - Highest priority
+// E - Exponents **
+// M - Multiplication *
+// D - Division /
+// A - Addition +
+// S - Subtraction - - Lowest priority
 
+let complexExample = 2 ** 3 + 10 * 5 / 2 - 3;
+// Breaks down as:
+// 1. 2 ** 3 = 8         (Exponent first)
+// 2. 10 * 5 = 50        (Multiplication)
+// 3. 50 / 2 = 25        (Division)
+// 4. 8 + 25 = 33        (Addition)
+// 5. 33 - 3 = 30        (Subtraction)
+console.log("Complex example:", complexExample);
 
-let x = 'I follow my own dreams';
-let y = x // this is a copy of x   y = 'I follow my own dreams'
-let z = y // this is a copy of y   z = 'I follow my own dreams'
+// Be careful with floating point arithmetic
+// JavaScript uses binary floating-point numbers which can lead to precision issues
+let floatingPoint = 0.1 + 0.2;  // Expected: 0.3, Actual: 0.30000000000000004
+console.log("Floating point example:", floatingPoint);
 
+// Assignment operators - different ways to modify a variable's value
+let x = 10;        // Basic assignment
 console.log(x);
+x = x + 5;         // Traditional addition
+console.log(x);
+x += 5;            // Shorthand addition (same as x = x + 5)
+console.log(x);
+x -= 5;            // Shorthand subtraction (same as x = x - 5)
+console.log(x);
+x *= 5;            // Shorthand multiplication (same as x = x * 5)
+console.log(x);
+x /= 5;            // Shorthand division (same as x = x / 5)
+console.log(x);
+x %= 5;            // Shorthand modulo (same as x = x % 5) - gives remainder after division
+console.log(x);
+
+let y = 10;
+y++; // this is the same as y = y + 1
 console.log(y);
+
+let z = 10;
+z--; // this is the same as z = z - 1
 console.log(z);
-
-
-
-
 
 
 
