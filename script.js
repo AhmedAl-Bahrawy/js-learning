@@ -9,12 +9,30 @@ let product = num1 * num2;
 let quotient = num1 / num2;
 let remainder = num1 % num2;
 
-console.log("first number: " + num1);
-console.log("second number: " + num2);
-console.log("sum: " + sum);
-console.log("difference: " + diff);
-console.log("product: " + product);
-console.log("quotient: " + quotient);
-console.log("remainder: " + remainder);
+
+
+const result = document.querySelector("h3");
+let text = "First number: "
+    + num1
+    + " <br> " +
+    "Second number: " +
+    num2 +
+    "<br>" +
+    "Sum: " +
+    sum +
+    "<br>" +
+    "Difference: " +
+    diff +
+    "<br>" +
+    "Product: " +
+    product +
+    "<br>" +
+    "Quotient: " +
+    quotient +
+    "<br>" +
+    "Remainder: " + 
+    remainder;
+console.log(text);
+result.innerHTML = text;
 
 //done
