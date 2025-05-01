@@ -30,12 +30,18 @@ console.log(x);
 console.log(y);
 console.log(z);
 
+console.log(typeof x);
+console.log(typeof y);
+console.log(typeof z);
+
+
 // I can change the value of x
-x = 'hi';
+x = 1;
 // I can change the value of y
-y = 'hello';
+y = false;
 // that is not allowed
 // z = 'world'; is not allowed
+z = 'world';
 
 // no issue     
 console.log(x);
@@ -48,10 +54,4 @@ console.log(z);
 console.log(typeof x);
 console.log(typeof y);
 console.log(typeof z);
-
-
-
-
-
-
 
