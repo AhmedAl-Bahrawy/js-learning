@@ -1,57 +1,49 @@
-// Data types
+let title = 'Hello World';
 
-// Primitive data types
-// Number int or float
-// String contains "" or ''
-// Boolean true or false
-// Null no value
-// Undefined no value
-// Symbol unique and immutable
-// BigInt large integers
-
-// Non-primitive data types
-// Object
-// Array
-
-// Variables
-// let new way
-// const new way
-// var old way
-
-// var is global scope old way
-var x = 'hello';
-
-// let and const are block scope new way
-let y = 'world';
-// I cannot change the value of z
-const z = 'hi';
-
-console.log(x);
-console.log(y);
-console.log(z);
-
-console.log(typeof x);
-console.log(typeof y);
-console.log(typeof z);
+// substring is used to get a part of a string
+console.log(title.substring(0, 5)); // Hello
+console.log(title.substring(6, 11)); // World
+console.log(title.substring(6)); // World
+console.log(title.substring(6, 6)); // ""
+console.log(title.substring(6, 5)); // ""
 
 
-// I can change the value of x
-x = 1;
-// I can change the value of y
-y = false;
-// that is not allowed
-// z = 'world'; is not allowed
-z = 'world';
+// length is used to get the length of a string
+console.log(title.length); // 11
 
-// no issue     
-console.log(x);
-// no issue
-console.log(y);
-// error
-console.log(z);
+// upperCase is used to convert a string to uppercase
+console.log(title.toUpperCase()); // HELLO WORLD
 
-// typeof operator to check the type of the variable
-console.log(typeof x);
-console.log(typeof y);
-console.log(typeof z);
+// lowerCase is used to convert a string to lowercase
+console.log(title.toLowerCase()); // hello world
+
+// replace is used to replace a part of a string with another string
+console.log(title.replace('Hello', 'Hi')); // Hi World
+
+// split is used to split a string into an array
+console.log(title.split(' ')); // ["Hello", "World"]
+
+
+//charAt is used to get the character at a specific index
+console.log(title.charAt(0)); // H
+
+
+//title[index] is used to get the character at a specific index as like as charAt
+console.log(title[0]); // H
+
+
+//indexOf is used to get the index of a specific character
+console.log(title.indexOf('H')); // 0
+
+let name = 'Ahmed';
+
+console.log(`Hello World, I am ${name}`); // 1
+
+
+
+
+
+
+
+
 
