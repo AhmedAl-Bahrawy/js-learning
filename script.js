@@ -1,19 +1,17 @@
-// Challenge 1:
+// Challenge 2:
 
-// Create a string variable
-let title = "Hello World";
+const text = document.getElementById('text');
+const r1 = document.getElementById('r-1');
+const r2 = document.getElementById('r-2');
+const r3 = document.getElementById('r-3');
 
-// Convert the string to uppercase
-title = title.toUpperCase();
-console.log(title);
+r1.innerHTML = text.innerHTML.toUpperCase();
+r2.innerHTML = text.innerHTML.replace("o", "y");
+r3.innerHTML = text.innerHTML.split('').reverse().join('');
 
-// Replace the first occurrence of 'o' with 'y'
-title = title.replace("o", "y");
-console.log(title);
 
-// Reverse the string by:
-// 1. split('') - converts string to array of characters
-// 2. reverse() - reverses the array
-// 3. join('') - converts array back to string
-title = title.split('').reverse().join('')
-console.log(title);
+
+
+
+
+
