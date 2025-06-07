@@ -1,27 +1,23 @@
-// boolean (true or false)
+// Logical Operators
 
-let x = true;
-let y = false;
-let z = null;
-let a = undefined;
+let x = 10;
+let y = 7;
 
-console.log(x); // true
-console.log(y); // false
-console.log(z); // null
-console.log(a); // undefined
+console.log(x > 5 && x < 15); // true
+console.log(x > 5 || x < 15); // true
+console.log(!(x > 5 && x < 15)); // false
 
 console.log("=".repeat(50));
 
-x = 10;
-y = 20;
-
-console.log(x > y); // false
-console.log(x < y); // true
-console.log(x >= y); // false
-console.log(x <= y); // true
-console.log(x == y); // false
-console.log(x != y); // true
-console.log(x === y); // false
-console.log(x !== y); // true
+console.log(x > 5 && y < 15); // true
+console.log(x > 5 || y < 15); // true
+// ! reverse the result
+console.log(!(x > 5 && y < 15)); // false
+console.log(y < 3 || y > 10 || x == 10); // true
 
 console.log("=".repeat(50));
+
+// ! reverse the result
+console.log(x > 5 && y < 15); // true
+console.log(x > 5 || y < 15); // true
+console.log(!(x > 5 && y < 15)); // false
