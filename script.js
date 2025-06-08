@@ -1,23 +1,27 @@
-// Logical Operators
+// Casting
 
-let x = 10;
-let y = 7;
+let x = "10";
+let y = 20;
 
-console.log(x > 5 && x < 15); // true
-console.log(x > 5 || x < 15); // true
-console.log(!(x > 5 && x < 15)); // false
+console.log(typeof x);
+console.log(typeof y);
 
-console.log("=".repeat(50));
+// ! Convert String to Number
+x = Number(x);
 
-console.log(x > 5 && y < 15); // true
-console.log(x > 5 || y < 15); // true
-// ! reverse the result
-console.log(!(x > 5 && y < 15)); // false
-console.log(y < 3 || y > 10 || x == 10); // true
+console.log(typeof x);
+
+console.log(x + y);
 
 console.log("=".repeat(50));
 
-// ! reverse the result
-console.log(x > 5 && y < 15); // true
-console.log(x > 5 || y < 15); // true
-console.log(!(x > 5 && y < 15)); // false
+// ! Convert Number to String
+console.log(typeof String(y));
+console.log(typeof y.toString());
+console.log(typeof y); // Number
+
+console.log("=".repeat(50));
+
+// ! Convert Boolean to String
+console.log(typeof String(true));
+console.log(typeof true.toString());
