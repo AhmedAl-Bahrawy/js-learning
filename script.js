@@ -1,24 +1,12 @@
-// Challenge 6
-let names = [];
+// For Loops
+// for (let i = 0; i <= 50; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
 
-const add_btn = document
-  .getElementById("add")
-  .addEventListener("click", function () {
-    const name = document.getElementById("name");
-    const names_list_HTML = document.getElementById("names-list");
-    if (name.value != "") {
-      names.push(name.value);
-      names_list_HTML.innerHTML = names;
-      name.value = "";
-    } else {
-      alert("please enter a name ");
-    }
-  });
+const taple = document.getElementById("taple");
 
-const delete_btn = document
-  .getElementById("delete")
-  .addEventListener("click", function () {
-    const names_list_HTML = document.getElementById("names-list");
-    names.pop();
-    names_list_HTML.innerHTML = names;
-  });
+for (let i = 0; i <= 30; i++) {
+  taple.innerHTML += `10 × ${i} = ${10 * i} <br>`;
+}
